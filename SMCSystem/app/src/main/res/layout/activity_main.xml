@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AB363535"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="390dp"
+                android:layout_height="101dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:shadowColor="@color/white"
+                android:text="Complaint Box"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="37dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/fronttxt1"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_rounded_input_field"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Citizen"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fronttxt2"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fronttxt1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/bg_rounded_input_field"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Admin"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/frtdept"
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fronttxt2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/bg_rounded_input_field"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Department"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note: For better experience use light mode of your device."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:paddingTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

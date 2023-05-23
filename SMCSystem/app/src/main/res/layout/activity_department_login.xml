@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepartmentLogin"
+    android:background="@drawable/bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#AB363535"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Awelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="210dp"
+                android:text="Welcome back!"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="italic|bold" />
+
+
+
+            <EditText
+                android:id="@+id/deptusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Awelcome"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:hint="Enter Username"
+                android:textColorHint="@color/white"
+                android:inputType="textEmailAddress"
+                android:padding="8dp" />
+
+
+            <EditText
+                android:id="@+id/deptpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptusername"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:hint="Enter Password"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/Dlogin_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptpassword"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:padding="4dp"
+                android:text="Login"
+                android:background="@drawable/bg_rounded_purple"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

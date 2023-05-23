@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/profilelayoutco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pictureco"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_image_24"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/unameco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/utimeco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33 min" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ptitleco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title: "
+        android:padding="3dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="Description: "
+        android:textColor="@color/colorBlack" />
+
+    <ImageView
+        android:id="@+id/pimagetvco"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorWhite" />
+        <TextView
+                android:id="@+id/addofcom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address "
+            android:padding="3dp"
+                android:textColor="@color/colorBlack" />
+            <TextView
+                android:id="@+id/sta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status: "
+                android:padding="3dp"
+                android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/comptype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Complaint Type: "
+            android:padding="3dp"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

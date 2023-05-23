@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddComplaintFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:id="@+id/txtdemo"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/texttype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Type of Complaint:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/typespinner"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/texttype"
+                android:background="@color/colorGray"
+                android:padding="10dp"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ptitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:hint="Enter Title"
+            android:textColor="@color/black"
+            android:background="@color/colorGray"
+            />
+        <ImageView
+            android:id="@+id/imagep"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_image_24" />
+
+        <EditText
+            android:id="@+id/pdes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorGray"
+            android:gravity="start"
+            android:textColorHint="@color/black"
+            android:layout_margin="10dp"
+            android:hint="Enter Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="10dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lattitude"
+            android:text="Lattitude"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/longitude"
+            android:layout_alignStart="@id/lattitude"
+            android:layout_below="@+id/lattitude"
+            android:text="Longitude"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:layout_alignStart="@id/lattitude"
+            android:layout_below="@+id/longitude"
+            android:text="Address"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:layout_alignStart="@id/lattitude"
+            android:layout_below="@+id/address"
+            android:text="City"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_alignStart="@id/lattitude"
+            android:layout_marginBottom="20dp"
+            android:text="Country"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pupload"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_margin="10dp"
+            android:text="Upload"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</ScrollView>

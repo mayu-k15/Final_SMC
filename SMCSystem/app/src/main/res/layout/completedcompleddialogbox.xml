@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/txtaddremark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Select Department"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/details"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="80dp"
+
+        android:layout_marginRight="20dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:elevation="10dp"
+        android:padding="20dp"
+        >
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtaddremark"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

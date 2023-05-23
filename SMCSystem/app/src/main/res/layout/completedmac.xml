@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:id="@+id/txtaddremark"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Add Completed Remark"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+
+
+    <TextView
+        android:id="@+id/txtremtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtaddremark"
+        android:layout_marginTop="13dp"
+        android:padding="3dp"
+        android:text="Review Message:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Review Here"
+        android:id="@+id/edreviemsg"
+        android:layout_toRightOf="@+id/txtremtext"
+        android:layout_below="@id/txtaddremark"
+        android:layout_marginTop="6dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtremtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Completed"
+
+        />
+</RelativeLayout>
